@@ -7,29 +7,66 @@
 
 .nav-logo{
   font-family: 'Kanit', sans-serif;
-  text-shadow: 2px 2px 6px black;
+  text-shadow: 2px 2px 6px rgb(75, 75, 75);
 }
 
 .navlogo-py{
   color: rgb(255, 136, 0);
-}
+  text-shadow: 2px 2px 5px rgb(46, 46, 46);
 
-.home-page{
-  height: 100dvh;
-  text-align: center;
-  background: linear-gradient(to top, #ff8008, #ffc837);
 }
 
 Nav{
   font-size: 1rem;
   font-weight: 500;
-  text-shadow: 1px 1px 3px black;
+  text-shadow: 1px 1px 3px rgb(133, 133, 133);
   font-family: 'Kanit', sans-serif;
-  letter-spacing: .1rem;
 }
 
+/* home stylings */
+.home-page{
+  height: 100dvh;
+  text-align: center;
+  background: linear-gradient(to top, #f0f0f0, #ff8008);
+  /* background: linear-gradient(to top, #ff8008, #ffc837); */
+}
+
+.home-section{
+  height: 92dvh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.home-section div{
+  width: 40%;
+  margin-top: 2rem;
+}
+
+.home-image img{
+  width: 80%;
+}
 
 /* mobiles  */
 @media only screen and (max-width: 600px) {
+
+  .home-section{
+    height: 92dvh;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-around;
+    align-items: center;
+  }
  
+  .home-section div{
+    width: 80%;
+    height: 33dvh;
+    margin-top: 2rem;
+  }
+  
+  .home-image img{
+    order: 1;
+  }
+
 }
