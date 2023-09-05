@@ -100,13 +100,14 @@ Nav{
     height: 92dvh;
     display: flex;
     flex-direction: column-reverse;
-    justify-content: start;
+    justify-content: flex-end;
     align-items: center;
   }
  
   .home-section div{
     width: 80%;
     height: 33dvh;
+    margin-top: 2.5rem;
   }
   
   .home-image img{
