@@ -100,6 +100,14 @@ Nav{
   transform: scale(0.95);
 }
 
+/* about page stylings */
+
+.about-page-section{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
 .about-page{
   display: flex;
   align-items: center;
@@ -107,6 +115,7 @@ Nav{
   padding-top: 5rem;
   height: 100dvh;
   text-align: center;
+  width: 80%;
 }
 
 /* mobiles  */
