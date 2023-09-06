@@ -6,7 +6,7 @@ import Navbar from 'react-bootstrap/Navbar';
 
 function NavigationBar() {
   return (
-        <Navbar collapseOnSelect expand="lg" className="bg-body-transparent" sticky="top" data-bs-theme="dark">
+        <Navbar collapseOnSelect expand="lg" className="bg-body-transparent" sticky='top' data-bs-theme="dark">
       <Container>
         <Navbar.Brand href="#home">
           <h2 className='nav-logo'><span className='navlogo-py'>Edu</span>Site</h2>

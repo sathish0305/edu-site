@@ -5,6 +5,7 @@
 *{
   margin: 0;
   padding: 0;
+  scroll-behavior: smooth;
 }
 
 .nav-logo{
@@ -21,6 +22,7 @@
 Nav{
   font-size: 1rem;
   font-weight: 500;
+  background-color: rgb(255, 136, 0);
   text-shadow: 1px 1px 3px rgb(133, 133, 133);
   font-family: 'Kanit', sans-serif;
 }
@@ -37,7 +39,7 @@ Nav{
   height: 92dvh;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
   flex-wrap: wrap;
 }
@@ -53,6 +55,11 @@ Nav{
 
 .home-text{
   font-family: 'Poppins', sans-serif;
+}
+
+.home-text h2{
+  font-size: 1.9rem;
+  font-weight:700;
 }
 
 .home-buttons{
@@ -93,10 +100,19 @@ Nav{
   transform: scale(0.95);
 }
 
+.about-page{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding-top: 5rem;
+  height: 100dvh;
+  text-align: center;
+}
+
 /* mobiles  */
 @media only screen and (max-width: 600px) {
 
-  .home-section{
+  .home-section,.about-page{
     height: 92dvh;
     display: flex;
     flex-direction: column-reverse;
@@ -114,6 +130,10 @@ Nav{
     order: 1;
   }
 
+  .about-image-section img{
+    width: 80%;
+  }
+
   .home-buttons{
   display: flex;
   width: 100%;
@@ -124,7 +144,7 @@ Nav{
 
   .button-87{
     padding: 0.5rem 0.5rem;
-    height: 2rem;
+    height: 40px;
     margin: 0;
     font-size: 0.8rem;
   }
